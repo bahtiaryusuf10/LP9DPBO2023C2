@@ -137,4 +137,4 @@ Program akan menampilkan halaman `Landing Page` yang berisi konten ucapan selama
 
 - Video
 
-  https://github.com/bahtiaryusuf10/
+  https://github.com/bahtiaryusuf10/LP9DPBO2023C2/assets/100776170/1b6c1941-5bac-4201-811e-520141b2a0c7
