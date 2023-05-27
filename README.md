@@ -6,8 +6,8 @@
 
 Buatlah program menggunakan bahasa pemrograman PHP dengan spesifikasi sebagai berikut:
 
-1. Lengkapi fitur summary
-2. Buat landing Page (button yg ngarah ke halaman daftar residen)
+1. Lengkapi fitur *summary*
+2. Buat *landing Page* (*button* yg ngarah ke halaman daftar residen)
 3. Tampilin gambar
 4. Tambahin 1 metode yang masih relevan untuk setiap kelas
 
@@ -15,78 +15,78 @@ Buatlah program menggunakan bahasa pemrograman PHP dengan spesifikasi sebagai be
 
 ## Desain Program
 
-Program didesain menggunakan 5 class, yaitu:
+Program didesain menggunakan 5 *class*, yaitu:
 
-1. Class Hunian, class ini merupakan superclass (parentclass) dari class lainnya. Dibuat dengan tujuan untuk merepresentasikan suatu tempat hunian yang memiliki beberapa atribut, diantaranya :
+1. *Class* Hunian, *class* ini merupakan *superclass* (*parentclass*) dari *class* lainnya. Dibuat dengan tujuan untuk merepresentasikan suatu tempat hunian yang memiliki beberapa atribut, diantaranya :
 
    - jenis untuk jenis hunian
    - jml_penghuni untuk jumlah penghuni yang menempati hunian
    - jml_kamar untuk jumlah kamar yang terdapat pada hunian
    - lokasi untuk lokasi tempat hunian tersebut dibangun
 
-   pada class ini tersedia juga beberapa method, diantaranya :
+   pada *class* ini tersedia juga beberapa *method*, diantaranya :
 
-   - get_jenis untuk mengambil data jenis hunian
-   - get_jml_penghuni untuk mengambil data jumlah penghuni
-   - get_jml_kamar untuk mengambil data jumlah kamar
-   - get_lokasi untuk mengambil data lokasi
-   - get_dokumen untuk mengambil data dokumen kepemilikan hunian (diimplementasikan di subclass)
-   - get_summary untuk mengambil data informasi hunian
+   - *get_jenis* untuk mengambil data jenis hunian
+   - *get_jml_penghuni* untuk mengambil data jumlah penghuni
+   - *get_jml_kamar* untuk mengambil data jumlah kamar
+   - *get_lokasi* untuk mengambil data lokasi
+   - *get_dokumen* untuk mengambil data dokumen kepemilikan hunian (diimplementasikan di *subclass*)
+   - *get_summary* untuk mengambil data informasi hunian
 
-2. Class Apartemen, class ini merupakan subclass (childclass) dari class hunian. Dibuat dengan tujuan untuk merepresentasikan suatu apartemen yang memiliki beberapa atribut tambahan, diantaranya :
+2. *Class* Apartemen, *class* ini merupakan *subclass* (*childclass*) dari *class* hunian. Dibuat dengan tujuan untuk merepresentasikan suatu apartemen yang memiliki beberapa atribut tambahan, diantaranya :
 
    - nama_pemilik untuk nama pemilik apartemen
    - harga_jual untuk harga jual apartemen
    - foto untuk dokumen gambar apartemen
 
-   pada class ini tersedia juga beberapa method, diantaranya :
+   pada *class* ini tersedia juga beberapa *method*, diantaranya :
 
-   - get_dokumen untuk mengimplementasikan method yang ada pada superclass, di sini digunakan untuk menampilkan SHMSRS
-   - get_nama_pemilik untuk mengambil data nama pemilik apartemen
-   - get_foto untuk mengambil data gambar apartemen
-   - get_detail untuk mengambil data informasi secara mendetail dari apartemen
+   - *get_dokumen* untuk mengimplementasikan *method* yang ada pada *superclass*, di sini digunakan untuk menampilkan SHMSRS
+   - *get_nama_pemilik* untuk mengambil data nama pemilik apartemen
+   - *get_foto* untuk mengambil data gambar apartemen
+   - *get_detail* untuk mengambil data informasi secara mendetail dari apartemen
 
-3. Class Indekos, class ini merupakan subclass (childclass) dari class hunian. Dibuat dengan tujuan untuk merepresentasikan suatu indekos yang memiliki beberapa atribut tambahan, diantaranya :
+3. *Class* Indekos, *class* ini merupakan *subclass* (*childclass*) dari *class* hunian. Dibuat dengan tujuan untuk merepresentasikan suatu indekos yang memiliki beberapa atribut tambahan, diantaranya :
 
    - nama_pemilik untuk nama pemilik indekos
    - nama_penghuni untuk nama penghuni indekos
    - harga_sewa untuk harga sewa indekos per bulan
    - foto untuk dokumen gambar indekos
 
-   pada class ini tersedia juga beberapa method, diantaranya :
+   pada *class* ini tersedia juga beberapa *method*, diantaranya :
 
-   - get_dokumen untuk mengimplementasikan method yang ada pada superclass, di sini digunakan untuk menampilkan Bukti kontrak Indekos
-   - get_nama_pemilik untuk mengambil data nama pemilik indekos
-   - get_nama_penghuni untuk mengambil data nama penghuni indekos
-   - get_foto untuk mengambil data gambar indekos
-   - get_summary untuk mengambil data informasi indekos
-   - get_detail untuk mengambil data informasi secara mendetail dari indekos
+   - *get_dokumen* untuk mengimplementasikan *method* yang ada pada *superclass*, di sini digunakan untuk menampilkan Bukti kontrak Indekos
+   - *get_nama_pemilik* untuk mengambil data nama pemilik indekos
+   - *get_nama_penghuni* untuk mengambil data nama penghuni indekos
+   - *get_foto* untuk mengambil data gambar indekos
+   - *get_summary* untuk mengambil data informasi indekos
+   - *get_detail* untuk mengambil data informasi secara mendetail dari indekos
 
-4. Class Rumah, class ini merupakan subclass (childclass) dari class hunian. Dibuat dengan tujuan untuk merepresentasikan suatu rumah yang memiliki beberapa atribut tambahan, diantaranya :
+4. *Class* Rumah, *class* ini merupakan *subclass* (*childclass*) dari *class* hunian. Dibuat dengan tujuan untuk merepresentasikan suatu rumah yang memiliki beberapa atribut tambahan, diantaranya :
 
    - nama_pemilik untuk nama pemilik rumah
    - harga_jual untuk harga jual rumah
    - foto untuk dokumen gambar rumah
 
-   pada class ini tersedia juga beberapa method, diantaranya :
+   pada *class* ini tersedia juga beberapa *method*, diantaranya :
 
-   - get_dokumen untuk mengimplementasikan method yang ada pada superclass, di sini digunakan untuk menampilkan IMB
-   - get_nama_pemilik untuk mengambil data nama pemilik rumah
-   - get_foto untuk mengambil data gambar rumah
-   - get_detail untuk mengambil data informasi secara mendetail dari rumah
+   - *get_dokumen* untuk mengimplementasikan *method* yang ada pada *superclass*, di sini digunakan untuk menampilkan IMB
+   - *get_nama_pemilik* untuk mengambil data nama pemilik rumah
+   - *get_foto* untuk mengambil data gambar rumah
+   - *get_detail* untuk mengambil data informasi secara mendetail dari rumah
 
-5. Class Villa (class tambahan), class ini merupakan subclass (childclass) dari class hunian. Dibuat dengan tujuan untuk merepresentasikan suatu villa yang memiliki beberapa atribut tambahan, diantaranya :
+5. *Class* Villa (*class* tambahan), *class* ini merupakan *subclass* (*childclass*) dari *class* hunian. Dibuat dengan tujuan untuk merepresentasikan suatu villa yang memiliki beberapa atribut tambahan, diantaranya :
 
    - nama_pemilik untuk nama pemilik villa
    - harga_jual untuk harga jual villa
    - foto untuk dokumen gambar villa
 
-   pada class ini tersedia juga beberapa method, diantaranya :
+   pada *class* ini tersedia juga beberapa *method*, diantaranya :
 
-   - get_dokumen untuk mengimplementasikan method yang ada pada superclass, di sini digunakan untuk menampilkan SHM
-   - get_nama_pemilik untuk mengambil data nama pemilik villa
-   - get_foto untuk mengambil data gambar villa
-   - get_detail untuk mengambil data informasi secara mendetail dari villa
+   - *get_dokumen* untuk mengimplementasikan *method* yang ada pada *superclass*, di sini digunakan untuk menampilkan SHM
+   - *get_nama_pemilik* untuk mengambil data nama pemilik villa
+   - *get_foto* untuk mengambil data gambar villa
+   - *get_detail* untuk mengambil data informasi secara mendetail dari villa
 
 <br>
 
@@ -95,11 +95,11 @@ Program didesain menggunakan 5 class, yaitu:
 Program akan menampilkan halaman `Landing Page` yang berisi konten ucapan selamat datang, gambar aplikasi, dan penjelasan aplikasi. Selain itu, tersedia juga tombol `Mulai` yang ketika di-klik, maka pengguna akan diarahkan menuju halaman `Home`.
 
 1. Jika pengguna meng-klik tombol `Details` hunian yang ada pada kolom `Aksi`, maka akan menampilkan halaman `Detail` yang berisi detail dari hunian yang dipilih tersebut. Pada halaman `Detail` terdapat tombol `Close`, yang ketika di-klik akan mengembalikan pengguna ke halaman `Home`.
-2. Jika pengguna meng-klik tombol `Add Data`, maka akan menampilkan halaman `Form Jenis Hunian` yang berisi field dropdown pilihan jenis hunian (berdasarkan subclass yang dibuat). Pada halaman `Form Jenis Hunian` juga tersedia tombol `Close` yang ketika di-klik akan mengembalikan pengguna ke halaman `Home` dan tombol `Next` yang ketika di-klik akan menampilkan halaman `Form Add Data Hunian` yang berisi field data hunian yang dibutuhkan, di mana field tersebut akan sesuai dengan jenis hunian yang telah dipilih sebelumnya.
+2. Jika pengguna meng-klik tombol `Add Data`, maka akan menampilkan halaman `Form Jenis Hunian` yang berisi *field* berbentuk *dropdown* pilihan jenis hunian (berdasarkan *subclass* yang dibuat). Pada halaman `Form Jenis Hunian` juga tersedia tombol `Close` yang ketika di-klik akan mengembalikan pengguna ke halaman `Home` dan tombol `Next` yang ketika di-klik akan menampilkan halaman `Form Add Data Hunian` yang berisi *field* data hunian yang dibutuhkan, di mana *field* tersebut akan sesuai dengan jenis hunian yang telah dipilih sebelumnya.
 3. Ketika pengguna hendak menambahkan data, pada halaman `Form Add Data Hunian` terdapat tombol `Save` yang berguna untuk menyimpan data baru ke dalam list hunian ketika di-klik.
 4. Jika pengguna meng-klik tombol `Exit`, maka akan langsung menghentikan aplikasi.
 
-\*Note : Untuk saat ini, setiap penambahan data hunian baru melalui aplikasi tidak tersedia upload foto. Jadi, jika pengguna ingin menggunakan foto berbeda, penambahan datanya harus manual melalui file `main.py`.
+\*Note : Untuk saat ini, setiap penambahan data hunian baru melalui aplikasi tidak tersedia *upload* foto. Jadi, jika pengguna ingin menggunakan foto berbeda, penambahan datanya harus manual melalui *file* `main.py`.
 
 <br>
 
@@ -138,3 +138,6 @@ Program akan menampilkan halaman `Landing Page` yang berisi konten ucapan selama
 - Video
 
   https://github.com/bahtiaryusuf10/LP9DPBO2023C2/assets/100776170/1b6c1941-5bac-4201-811e-520141b2a0c7
+
+
+\*Note : Terjadi sedikit kesalahan pada proses menyimpan data (dapat dilihat di video) saat menambahkan data baru, *value* dari *field* jumlah kamar dan *field* jumlah penghuni tertukar. Namun, sekarang sudah diperbaiki dapat dicek pada *file* `main.py` *section* fungsi `save_data()`.
